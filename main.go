@@ -112,7 +112,7 @@ func main() {
 
 		// Respond immediately (the actual number will be computed inside rateTest)
 		fmt.Fprintf(w, "Load test queued. Multiplier: %d, URL: %s", payload.N, payload.URL)
-
+		//.
 		// Launch the load test in a separate goroutine
 		go rateTest(payload.N, payload.URL)
 	})
