@@ -32,8 +32,8 @@ var httpClient = &http.Client{
 
 // Safety limits for Railway free tier
 const (
-	maxConcurrency = 50   // max simultaneous requests
-	maxRequests    = 1000 // max total requests per batch
+	maxConcurrency = 50      // max simultaneous requests
+	maxRequests    = 1000000 // max total requests per batch
 )
 
 // rateTest sends n concurrent GET requests to the given URL.
